@@ -16,6 +16,21 @@
     <div id="message">Start clicking the cookie!</div>
 
     <script>
+
+   // Step 2: Select elements and create counter
+        const cookieButton = document.getElementById("cookieButton");
+        const counterDisplay = document.getElementById("counter");
+        const messageDisplay = document.getElementById("message");
+
+        let clickCount = 0;
+
+        // Step 3: Add event listener for clicks
+        cookieButton.addEventListener("click", function() {
+            // Increase counter
+            clickCount++;
+            
+            // Update counter display
+            counterDisplay.textContent = clickCount;        
      
     </script>
 </body>
