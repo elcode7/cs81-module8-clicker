@@ -30,7 +30,22 @@
             clickCount++;
             
             // Update counter display
-            counterDisplay.textContent = clickCount;        
+            counterDisplay.textContent = clickCount;  
+
+            if (clickCount === 10) {
+                messageDisplay.textContent = "You’re just getting started!";
+                document.body.style.backgroundColor = "#ffe0b3";
+            } else if (clickCount === 25) {
+                messageDisplay.textContent = "Wow, that’s a lot of cookies!";
+                document.body.style.backgroundColor = "#ffd699";
+            } else if (clickCount === 50) {
+                messageDisplay.textContent = "Are you still clicking?";
+                document.body.style.backgroundColor = "#ffb366";
+            } else if (clickCount === 100) {
+                messageDisplay.textContent = "You win! Maybe take a break 🍪";
+                document.body.style.backgroundColor = "#ff9933";            }
+        });
+            
      
     </script>
 </body>
